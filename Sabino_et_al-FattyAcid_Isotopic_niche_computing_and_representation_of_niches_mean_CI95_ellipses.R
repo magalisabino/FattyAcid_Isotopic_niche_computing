@@ -4,10 +4,12 @@
 ##                    - Calculation of niche metrics (i.e. niche size and probabilities of niche overlap)
 ##                    - Representation (plot) of niche mean ellipses and CI95% ellipses
 ## As part of :
-##    Sabino et al. "Habitat degradation increases interspecific competition between three spiny lobsters in Seychelles"
+##    Sabino et al. 2021 "Habitat degradation increases interspecific trophic competition between three spiny lobster species in Seychelles"
+##    https://doi.org/10.1016/j.ecss.2021.107368
 ##
 ## Author : Magali Sabino
-## Last update : 2020-10-21
+## First publication on GitHub : 2020-10-21
+## Last update : 2021-05-18
 ##
 ## For more information on the nicheROVER package, see:
 ##    - Swanson et al. 2015 "A new probabilistic method for quantifying n-dimensional ecological niches and niche overlap" Ecology, 96 (2), p. 318-324
@@ -23,6 +25,11 @@
 
 ### 0 // Packages ##########################################################################################
 
+## INSTRUCTIONS TO INSTALL THE LATEST VERSION OF nicheROVER PACKAGE
+install.packages("remotes")
+remotes::install_github("mlysy/nicheROVER") # nicheROVER version used in this script: v1.0.0.9000 (see https://rdrr.io/github/mlysy/nicheROVER/)
+
+## Open libraries
 lapply(c("tidyverse", "vegan", "nicheROVER"),
        library, character.only = TRUE)
 
